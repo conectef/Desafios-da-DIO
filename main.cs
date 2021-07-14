@@ -12,39 +12,66 @@ class minhaClasse {
 
     static void Main(string[] args) { 
 
-            int ddd = Convert.ToInt32(Console.ReadLine());
+            double salario, reajuste, novoSalario, percentual;
+            salario = Convert.ToDouble(Console.ReadLine());
+            
+            float reajuste,salario;
+            int funcionario;
 
-            switch (ddd)
+            if (salario>=0.0&&salario<=400.0) { aumento=0.15;SalarioFinal=salario+(aumento*salario); }
+            if (salario>=400.01&&salario<=700.0) { aumento=0.12;SalarioFinal=salario+(aumento*salario); }
+
+            if (salario>=700.01&&salario<=1000.0) { aumento=0.10;SalarioFinal=salario+(aumento*salario); }
+
+            if (salario>=1000.01&&salario<=1800.0) { aumento=0.07;SalarioFinal=salario+(aumento*salario); }
+
+            if (salario>=1800.01&&salario<=2500.0) { aumento=0.04;SalarioFinal=salario+(aumento*salario);}
+            if(salario >= 0.00 && salario <= 000.00)
+            salario*=aumento;
             {
-                case 61:
-                    Console.WriteLine("Brasilia");
-                    break;
-                case 71:                             //complete os DDD's corretamente
-                    Console.WriteLine("Salvador");
-                    break;
-                case 11:
-                    Console.WriteLine("Sao Paulo");
-                    break;
-                case 21:
-                    Console.WriteLine("Rio de Janeiro");
-                    break;
-                case 32:
-                    Console.WriteLine("Juiz de Fora");
-                    break;
-                case 19:
-                    Console.WriteLine("Campinas");
-                    break;
-                case 27:
-                    Console.WriteLine("Vitoria");
-                    break;
-                case 31:
-                    Console.WriteLine("Belo Horizonte");
-                    break;
-                default:
-                    Console.WriteLine("DDD nao cadastrado");
-                    break;
-        }
-
+                reajuste = salario * 0.00; 
+                novoSalario = salario + reajuste;
+                percentual = ((novoSalario - salario) * 000) /salario;
+                Console.WriteLine("Novo salario: {0:0.00}", novoSalario);
+                Console.WriteLine("Reajuste ganho: {0:0.00}", reajuste);
+                Console.WriteLine("Em percentual: {0} %", percentual);
+            
+                
+            }
+            else if (salario > 000.00 && salario <= 000.00)
+            {
+                reajuste = salario * 0.00;
+                novoSalario = salario + reajuste;
+                percentual = ((novoSalario - salario) * 000) / salario;
+                Console.WriteLine("Novo salario: {0:0.00}", novoSalario);
+                Console.WriteLine("Reajuste ganho: {0:0.00}", reajuste);
+                Console.WriteLine("Em percentual: {0} %", percentual);
+            }
+            else if (salario > 000.00 && salario <= 000.00)
+            {
+                reajuste = salario * 0.00;
+                novoSalario = salario + reajuste;
+                percentual = ((novoSalario - salario) * 000) / salario;
+                Console.WriteLine("Novo salario: {0:0.00}", novoSalario);
+                Console.WriteLine("Reajuste ganho: {0:0.00}", reajuste);
+                Console.WriteLine("Em percentual: {0} %", percentual);
+            }
+            else if (salario > 000.00 && salario <= 000.00)
+            {
+                reajuste = salario * 0.00;
+                novoSalario = salario + reajuste;
+                percentual = ((novoSalario - salario) * 000) / salario;
+                Console.WriteLine("Novo salario: {0:0.00}", novoSalario);
+                Console.WriteLine("Reajuste ganho: {0:0.00}", reajuste);
+                Console.WriteLine("Em percentual: {0} %", percentual);
+            }
+            else 
+            {
+                Console.WriteLine(string.Format("Resultado: {0}", Resultado)); //complete o codigo
+            }
+        }   
     }
-    
-}
+
+
+
+
